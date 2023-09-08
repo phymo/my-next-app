@@ -35,6 +35,7 @@ export async function updateUser({
       name: name,
       image: image,
       bio: bio,
+      onboarded: true,
     }, { upsert: true });
   } catch (error: any) {
     throw new Error(`Failed to create/update user: ${error.message}`);
